@@ -1,0 +1,40 @@
+int vA = 3; //Pin for controlling voltage A
+int vB = 11; //vB: Pin for controlling voltage B
+int i1 = 4; //i1: Pin for controlling current 1
+int i2 = 5;
+int i3 = 9;
+int i4 = 10;
+
+void setup() {
+  pinMode(vA, OUTPUT);
+  pinMode(vB, OUTPUT);
+  pinMode(i1, OUTPUT);
+  pinMode(i2, OUTPUT);
+  pinMode(i3, OUTPUT);
+  pinMode(i4, OUTPUT);
+
+  digitalWrite(i1, LOW);
+  digitalWrite(i2, LOW);
+  digitalWrite(i3, LOW);
+  digitalWrite(i4, LOW);
+}
+// Configure pin modes as OUTPUT for vA, vB, i1, i2, i3, and i4.
+// Set initial states for i1, i2, i3, and i4 as LOW.
+
+void loop() {
+  moveDC();//The moveDC() function sets the motor speed and direction.
+}
+
+void moveDC() {  
+  analogWrite(vA, 250);
+  analogWrite(vB, 250);
+
+//analogWrite() is used to set the voltage levels (vA and vB) for motor speed control. A value of 250 corresponds to maximum speed.
+ 
+ digitalWrite(i1, HIGH);
+  digitalWrite(i2, LOW);
+  digitalWrite(i3, HIGH);
+  digitalWrite(i4, LOW);
+}
+
+//digitalWrite() is used to set the states of i1, i2, i3, and i4 pins to control the motor direction. In this case, it sets i1 and i3 to HIGH, while i2 and i4 are set to LOW.

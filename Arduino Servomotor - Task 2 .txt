@@ -1,0 +1,41 @@
+#include <Servo.h>
+
+Servo myServo; 
+
+int servoPosition = 0;   
+
+void setup() {
+  myServo.attach(2);  
+}
+
+void loop() {
+  for (servoPosition = 0; servoPosition <= 180; servoPosition += 1) { 
+    myServo.write(servoPosition);             
+    delay(10);                      
+  }
+  for (servoPosition = 180; servoPosition >= 0; servoPosition -= 1) { 
+    myServo.write(servoPosition);              
+    delay(10);                     
+  }
+}
+
+
+//The steps in the code can be described as follows:;
+
+//1. Library Inclusion: The code includes the Servo library using `#include <Servo.h>`. This allows us to control servo motors.;
+
+//2. Servo Object Creation: The code creates a servo object named `myServo` using `Servo myServo;`. This object will be used to control the servo motor.;
+
+//3. Variable Declaration: The code declares an integer variable named `servoPosition` and initializes it to 0. This variable will hold the current position of the servo motor.;
+
+//4. Setup Function: The code defines the `setup()` function. In this function, the servo object is attached to pin 2 using `myServo.attach(2);`. This sets up the servo motor to be controlled through pin 2.;
+
+//5. Loop Function: The code defines the `loop()` function, which contains the main logic of the program.;
+
+//6. First For Loop: The first `for` loop is used to sweep the servo motor from position 0 to 180 degrees. It starts at `servoPosition = 0` and increments `servoPosition` by 1 in each iteration. Inside the loop, the `myServo.write(servoPosition)` command sets the servo motor to the current position. The `delay(10)` command adds a delay of 10 milliseconds between each position change.;
+
+//7. Second For Loop: The second `for` loop is similar to the first loop but is used to sweep the servo motor back from 180 to 0 degrees. It starts at `servoPosition = 180` and decrements `servoPosition` by 1 in each iteration.;
+
+//The `loop()` function will continuously repeat these steps, causing the servo motor to sweep back and forth between 0 and 180 degrees.;
+
+    
