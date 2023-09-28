@@ -9,7 +9,7 @@ https://www.tinkercad.com/things/0uBnXW88pmt?sharecode=kyum5PVLaVsI5PefAu_TSuDqj
 ![Arduino Servomotor - Task 2 ](https://github.com/H16Bw/Electronics-and-Power-Department-Task-2/assets/139852537/675b8ee1-4b4d-4ba1-82ea-296c712ebc15)
 
 # Arduino DC-Motor 
-A task for an electrical circuit using Arduino to turn on a LED matrix - Summer training program at the Smart Methods Foundation
+A task for using Arduino to run the DC-motor - summer training program at Smart Methods
 ## Tinkercad Link - Arduino DC-Motor 
 https://www.tinkercad.com/things/fAddPiRN0Tz?sharecode=cwy8Urs35hG5uZt12_wHGIjnuUdJHVmJykCjeMNhbns
 
